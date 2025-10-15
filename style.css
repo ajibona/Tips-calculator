@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--ff-fonts-family);
+}
+
+:root {
+  /* Primary Colors */
+  --cc-Green-400: hsl(172, 67%, 45%);
+  
+  /* Secondary Colors */
+  --cc-Green-900: hsl(183, 100%, 15%);
+  --cc-Grey-500: hsl(186, 14%, 43%);
+  --cc-Grey-400: hsl(184, 14%, 56%);
+  --cc-Grey-200: hsl(185, 41%, 84%);
+  --cc-Grey-50: hsl(189, 47%, 97%);
+  --cc-White: hsl(0, 100%, 100%);
+  
+  /* Fonts */
+  --ff-fonts-form-inputs: 1.5rem;
+  --ff-fonts-family: "Space Mono", monospace;
+  
+  --ff-fonts-weight: 700;
+  
+}
+
+body {
+  background-color: var(--cc-Grey-200);
+  scroll-behavior: smooth;
+}
+
+.logo-guide{
+  width: 100%;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+input::placeholder {
+  font-family: var(--ff-fonts-family);
+  font-size: var(--ff-fonts-form-inputs);
+  font-weight: var(--ff-fonts-weight);
+}
+
+#bills{
+  text-align: right;
+  color: var(--cc-Green-900);
+}
+
+.tips-box {
+  background-color: var(--cc-White);
+  padding: 30px 30px;
+  margin-top: 40px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 40px;
+  text-transform: uppercase;
+  color: var(--cc-Grey-500);
+  letter-spacing: 10px;
+  font-size: 1.6rem;
+}
+
+.bills-input-data-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background-color: var(--cc-Grey-50);
+  padding: 5px 15px;
+  border-radius: 5px;
+  transition: 0.1s ease-in;
+}
+
+.bills-input-data-box:hover {
+  outline: 2px solid var(--cc-Green-400);
+}
+
+.bills-input-fields p {
+  font-weight: var(--ff-fonts-weight);
+  color: var(--cc-Grey-500);
+  margin-bottom: 5px;
+}
+
+.bills-input-data-box img {
+  width: 20px;
+  height: 20px;
+}
+
+input{
+  outline: none;
+  border: none;
+  padding: 5px 0;
+  width: 100%;
+  background-color: var(--cc-Grey-50);
+  text-align: right;
+  font-size: var(--ff-fonts-form-inputs);
+  color: var(--cc-Green-900);
+  font-weight: var(--ff-fonts-weight);
+}
+
+.percentage-box {
+  margin-block: 30px 30px;
+}
+
+.percentage-box p {
+  font-weight: var(--ff-fonts-weight);
+  color: var(--cc-Grey-500);
+  margin-bottom: 20px;
+}
+
+.percentage-btn {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.percentage-btn button {
+  font-size: var(--ff-fonts-form-inputs);
+  border-radius: 5px;
+  padding: 8px 0;
+  font-weight: var(--ff-fonts-weight);
+  transition: .1s ease-in;
+  outline: none;
+}
+
+.percentage-btn .btn {
+  background-color: var(--cc-Green-900);
+  color: var(--cc-White);
+}
+
+.btn-custom {
+  background-color: var(--cc-Grey-50);
+  color: var(--cc-Grey-500);
+}
+
+.percentage-btn .btn:hover {
+  background-color: var(--cc-Grey-200);
+  color: var(--cc-Green-900);
+}
+
+#custom::placeholder{
+  text-align: center;
+  font-weight: var(--ff-fonts-weight);
+  color: var(--cc-Grey-500);
+}
+
+#custom{
+  padding-inline: 10px;
+}
+
+.heading-info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.heading-info .error-text{
+  color: red;
+  display: none;
+}
+
+.tip-data-display{
+  margin-top: 40px;
+  background-color: var(--cc-Green-900);
+  padding: 40px 20px 20px 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+}
+
+.tip-data{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tip-info h4{
+  color: var(--cc-White);
+}
+
+.tip-info p{
+  color: var(--cc-Grey-500);
+  font-weight: var(--ff-fonts-weight);
+  font-size: .8rem;
+}
+
+.amount-data h2{
+  color: var(--cc-Green-400);
+  font-size: 2.2rem;
+  font-weight: var(--ff-fonts-weight);
+}
+
+.tip-data-display button{
+  background-color: var(--cc-Green-400);
+  outline: none;
+  border: none;
+  font-size: 1.3rem;
+  padding-block: 10px;
+  color: var(--cc-Green-900);
+  text-transform: uppercase;
+  font-weight: var(--ff-fonts-weight);
+  border-radius: 5px;
+}
+
+.tip-data-display button:hover{
+  background-color: var(--cc-Grey-200);
+}

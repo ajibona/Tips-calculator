@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Tip calculator app</title>
+  
+ 
+</head>
+
+<body>
+  
+  <section id="home-section">
+    <div class="logo-guide">
+      <img src="images/logo.svg" alt="" class="logo-icon"/>
+    </div>
+     
+      <!--<h1>spli<br>tter</h1>-->
+    <div class="tips-box">
+      <div class="bills-input-fields">
+        <div class="heading-info">
+          <p class="heading-text">Bill</p>
+          <p class="error-text">Can't be zero</p>
+        </div>
+        
+        <div class="bills-input-data-box">
+          <img src="images/icon-dollar.svg" alt="" />
+          <input type="number" name="bills" id="bills" placeholder="0" pattern="[0-9+\.]*"/>
+        </div>
+      </div>
+      
+      <div class="percentage-box">
+        <p>Select Tip %</p>
+        
+        <div class="percentage-btn">
+          <button class="btn">5%</button>
+          <button class="btn">10%</button>
+          <button class="btn">15%</button>
+          <button class="btn">25%</button>
+          <button class="btn">50%</button>
+          <!--
+          <button class="btn-custom">custom</button>
+          -->
+          <input type="number" name="cystom" id="custom" value="" placeholder="Custom" pattern="[0-9]*" />
+        </div>
+      </div>
+      
+      <div class="bills-input-fields">
+        <div class="heading-info">
+          <p class="heading-text">Number of People</p>
+          <p class="error-text">Can't be zero</p>
+        </div>
+        
+        <div class="bills-input-data-box">
+          <img src="images/icon-person.svg" alt="" />
+          <input type="number" name="bills" id="bills" placeholder="0" pattern="[0-9]*"/>
+        </div>
+      </div>
+      
+      <div class="tip-data-display">
+       
+        <div class="tip-data">
+          <div class="tip-info">
+            <h4>Tip Amount</h4>
+            <p>/ person</p>
+          </div>
+          <div class="amount-data">
+            <h2>$0.00</h2>
+          </div>
+        </div>
+        
+        <div class="tip-data">
+          <div class="tip-info">
+            <h4>Total</h4>
+            <p>/ person</p>
+          </div>
+          <div class="amount-data">
+            <h2>$0.00</h2>
+          </div>
+        </div>
+        
+        <button>Reset</button>
+      </div>
+    </div>
+    
+  </section>
+
+  <script scr="script.js">
+  
+  </script>
+</body>
+
+</html>
